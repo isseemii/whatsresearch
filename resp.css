@@ -1,0 +1,72 @@
+@media screen and (max-width:600px) {
+
+body {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.column {
+    position: fixed;
+
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+#first {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+#second {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.slide {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+    .qa {
+        position: absolute;
+        width: 100vw;
+        height: 50vh;
+        overflow: scroll;
+        padding: 16px;
+    }
+
+    .footnote {
+        position: absolute;
+        width: 100vw;
+        bottom: 0px;
+        height: 50vh;
+        background-color: whitesmoke;
+        overflow: scroll;
+        font-size: 1em;
+        padding: 16px;
+    }
+
+        .footnote img {
+            width: 90%;
+        }
+
+        .footnote .note {
+            position: absolute;
+            bottom: 16px;
+            padding: 16px;
+            width: 90%;
+        }
+
+    .extraction {
+        padding: 10px;
+        margin-left: 4rem;
+        font-style: italic;
+
+    }
+} 
