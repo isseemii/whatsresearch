@@ -16,12 +16,6 @@
     src: url(./fonts/FavoritHangulLining-Book.13edb35.woff2) format("woff2"), url(./fonts/FavoritHangulLining-Book.a69d1d2.woff) format("woff")
 }
 
-@keyframes blink-effect {
-  50% {
-    opacity: 0;
-  }
-}
-
 
 *,
 *::before,
@@ -31,19 +25,15 @@ padding: 0;
 box-sizing: border-box;
 }
 
-html, body {
+html, body, h1 {
 	font-family: "Favorit-Book-Hangul";
 	font-style: normal;
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: normal;
-	line-height: 26px;
+	line-height: 1.6;
 	word-break: keep-all;
 }
 
-.ml-ko {
-	position: relative;
-	font-size: 0.97em;
-}
 
 a, #goinfo, .nav {
 	font-family: "FavoritLining-Book-Hangul";
@@ -80,31 +70,29 @@ a, #goinfo, .nav: hover {
 
 .slide {
 	position: relative;
-	width: 80vw;
+	width: 100vw;
 	height: 100vh;
 	scroll-snap-align: center;
 }
 
 	.qa {
 		position: absolute;
-		width: 40vw;
-/*		border-right: 1px solid black;*/
+		width: 55vw;
 		height: 100vh;
-		padding: 24px;
+		padding: 1.5rem;
+		padding-top: 4.5rem;
 		overflow: scroll;
 	}
 
 	.footnote {
 		position: absolute;
-		padding: 24px;
+		padding: 1.5rem;
+		padding-top: 4.5rem;
 		width: 40vw;
 		right: 0px;
 		height: 100vh;
 		background-color: whitesmoke;
 		overflow: scroll;
-
-/*		font-size: 0.8em;*/
-		line-height: 1.6;
 	}
 
 		.footnote img, video {
@@ -114,8 +102,8 @@ a, #goinfo, .nav: hover {
 		.footnote .note {
 			padding-top: 1rem;
 /*			position: absolute;
-			bottom: 24px;
-			padding-right: 24px;
+			bottom: 1.5rem;
+			padding-right: 1.5rem;
 			width: 90%;*/
 		}
 
@@ -123,7 +111,6 @@ a, #goinfo, .nav: hover {
 		padding: 10px;
 		margin-left: 4rem;
 		font-style: italic;
-
 	}
 
 	.subs {
@@ -146,4 +133,6 @@ a, #goinfo, .nav: hover {
 .a {
 	width: 95%;
 }
+
+
 

@@ -1,72 +1,41 @@
 @media screen and (max-width:600px) {
 
-body {
-    font-size: 14px;
-    line-height: 1.6;
-}
+    body, h1 {
+        font-size: .95rem;
+        line-height: 1.6;
+    }
 
-.column {
-    position: fixed;
+    h1 {
+        z-index: 999;
+    }
 
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-}
+    .column {
+        display: inline-block;
+        scroll-snap-type: none;
+    }
 
-#first {
-    display: none;
-    width: 0;
-    height: 0;
-}
+    .slide {
+        position: relative;
+        height: auto;
 
-#second {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    top: 0;
-}
+    }
 
-.slide {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    scroll-snap-align: center;
-}
-
-    .qa {
-        position: absolute;
+    .qa, .footnote {
+        position: relative;
+        padding: 1.2rem;
         width: 100vw;
-        height: 50vh;
-        overflow: scroll;
-        padding: 16px;
+        height: auto;
+    }
+
+    .qa #q1 {
+        padding-top: 3rem;
+        overflow: visible;
     }
 
     .footnote {
-        position: absolute;
-        width: 100vw;
-        bottom: 0px;
-        height: 50vh;
+        z-index: 0;
+        overflow: visible;
         background-color: whitesmoke;
-        overflow: scroll;
-        font-size: 1em;
-        padding: 16px;
     }
 
-        .footnote img {
-            width: 90%;
-        }
-
-        .footnote .note {
-            position: absolute;
-            bottom: 16px;
-            padding: 16px;
-            width: 90%;
-        }
-
-    .extraction {
-        padding: 10px;
-        margin-left: 4rem;
-        font-style: italic;
-
-    }
 } 
